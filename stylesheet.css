@@ -1,9 +1,99 @@
+*
+{
+	box-sizing: border-box;
+}
 body
 {
 	background-color: #f6efed;
 }
 img
 {
-	width: 100%;
-	height: 100%;
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+.postheadings
+{
+	font-size: 20px;
+	text-align: center;
+}
+.post
+{
+	width: 450px;
+	height: 350px;
+
+	font-size: 18px;
+	text-align: center;
+	line-height: 1.3;
+
+	margin: 10px;
+
+	background-color: #ede1e1;
+}
+.flex-container
+{
+	display: flex;
+	align-items: flex-start;
+	align-content: space-around;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#hello
+{
+	font-size: 60px;
+	text-align: center;
+	color: #ff0000;
+}
+#intro
+{
+	font-size: 20px;
+	text-align: center;
+}
+#cartoonheader
+{
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+@media screen and (max-width: 960px)
+{
+	.post
+	{
+		width: 600px;
+		height: auto;
+	}
+}
+@media screen and (max-width: 1050px)
+{
+	#intro
+	{
+		text-align: justify;
+	}
+}
+@media screen and (max-width: 600px)
+{
+	#hello
+	{
+		font-size: 9vw;
+	}
+	#cartoonheader
+	{
+		text-align: justify;
+	}
+	.postheadings
+	{
+		font-size: 4.5vw;
+	}
+	.post
+	{
+		width: 100%;
+		font-size: 20px;
+		line-height: 1.2;
+	}
 }
