@@ -76,7 +76,7 @@ img
 {
 	#hello
 	{
-		font-size: 8vw;
+		font-size: 9vw;
 	}
 	#intro
 	{
@@ -88,6 +88,7 @@ img
 	#cartoonheader
 	{
 		font-size: 1.2em;
+		font-weight: normal;
 		text-align: justify;
 		margin-right: 10px;
 		margin-left: 10px;
@@ -95,6 +96,7 @@ img
 	.postheadings
 	{
 		font-size: 4vw;
+		font-weight: normal;
 	}
 	.post
 	{
