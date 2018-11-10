@@ -17,6 +17,8 @@ img
 .postheadings
 {
 	font-size: 25px;
+	font-weight: normal;
+	color: #483a3a;
 	text-align: center;
 }
 .post
@@ -50,6 +52,7 @@ img
 {
 	font-size: 60px;
 	text-align: center;
+	font-weight: normal;
 	color: #ff0000;
 }
 #intro
@@ -96,7 +99,7 @@ img
 	.postheadings
 	{
 		font-size: 4vw;
-		font-weight: normal;
+		color: #483a3a;
 	}
 	.post
 	{
