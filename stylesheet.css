@@ -34,7 +34,7 @@ img
 
 	background-color: #ede1e1;
 
-	box-shadow: 0 0 15px 0 grey;
+	box-shadow: 0 0 15px 0 #9a9594;
 }
 .flex-container
 {
@@ -66,7 +66,6 @@ img
 {
 	#intro
 	{
-		font-size: 1em;
 		text-align: justify;
 		margin-right: 2px;
 		margin-left: 2px; 
@@ -78,24 +77,28 @@ img
 	{
 		font-size: 7vw;
 	}
+	#intro
+	{
+		font-size: 1em;
+	}
 }
 @media screen and (max-width: 610px)
 {
 	#cartoonheader
 	{
-		font-size: 1em;
+		font-size: 1.2em;
 		text-align: justify;
 		margin-right: 10px;
 		margin-left: 10px;
 	}
 	.postheadings
 	{
-		font-size: 4.5vw;
+		font-size: 4vw;
 	}
 	.post
 	{
 		width: 100%;
-		font-size: 20px;
+		font-size: 1em;
 		line-height: 1.2;
 
 		margin-left: 2px;
@@ -103,6 +106,6 @@ img
 		margin-top: 7px;
 		margin-bottom: 7px; 
 
-		box-shadow: 0 0 8px 0 grey;
+		box-shadow: 0 0 9px 0 #9a9594;
 	}
 }
