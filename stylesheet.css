@@ -10,24 +10,23 @@ img
 {
 	display: block;
 	max-width: 100%;
-	height: auto;
 	margin-left: auto;
 	margin-right: auto;
 }
 .postheadings
 {
-	font-size: 20px;
+	font-size: 25px;
 	text-align: center;
 }
 .post
 {
-	width: 450px;
-	height: 350px;
+	width: 600px;
 
 	font-size: 18px;
 	text-align: center;
 	line-height: 1.3;
 
+	padding: 10px;
 	margin: 10px;
 
 	background-color: #ede1e1;
@@ -35,14 +34,11 @@ img
 .flex-container
 {
 	display: flex;
-	align-items: flex-start;
-	align-content: space-around;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
 
 	padding-top: 5px;
-	padding-bottom: 5px;
 }
 #hello
 {
@@ -61,30 +57,29 @@ img
 	font-weight: bold;
 	text-align: center;
 }
-@media screen and (max-width: 960px)
-{
-	.post
-	{
-		width: 600px;
-		height: auto;
-	}
-}
 @media screen and (max-width: 1050px)
 {
 	#intro
 	{
 		text-align: justify;
+		margin-right: 3px;
+		margin-left: 3px; 
 	}
 }
-@media screen and (max-width: 600px)
+@media screen and (max-width: 650px)
 {
 	#hello
 	{
 		font-size: 9vw;
 	}
+}
+@media screen and (max-width: 610px)
+{
 	#cartoonheader
 	{
 		text-align: justify;
+		margin-right: 10px;
+		margin-left: 10px;
 	}
 	.postheadings
 	{
@@ -95,5 +90,8 @@ img
 		width: 100%;
 		font-size: 20px;
 		line-height: 1.2;
+
+		margin-top: 5px;
+		margin-bottom: 5px; 
 	}
 }
