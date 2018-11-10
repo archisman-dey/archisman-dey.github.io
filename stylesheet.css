@@ -38,7 +38,15 @@ img
 	background-color: #f6efed;
 
 	box-shadow: 0 0 15px 0 #9a9594;
+
+	transition: box-shadow 0.2s;
+	/*transition-timing-function: linear;*/
 }
+.post:hover
+{
+	box-shadow: 0 0 25px 0 #74706f;
+}
+
 .flex-container
 {
 	display: flex;
@@ -63,7 +71,6 @@ img
 #cartoonheader
 {
 	font-size: 20px;
-	font-weight: bold;
 	text-align: center;
 }
 @media screen and (max-width: 1050px)
@@ -91,7 +98,6 @@ img
 	#cartoonheader
 	{
 		font-size: 1.2em;
-		font-weight: normal;
 		text-align: justify;
 		margin-right: 10px;
 		margin-left: 10px;
