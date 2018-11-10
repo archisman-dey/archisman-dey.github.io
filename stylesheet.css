@@ -5,6 +5,7 @@
 body
 {
 	background-color: #f6efed;
+	font-family: 'Roboto';
 }
 img
 {
@@ -75,7 +76,7 @@ img
 {
 	#hello
 	{
-		font-size: 7vw;
+		font-size: 8vw;
 	}
 	#intro
 	{
