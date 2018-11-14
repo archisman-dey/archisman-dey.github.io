@@ -69,12 +69,11 @@ img
 	font-size: 20px;
 	text-align: center;
 }
-#cartoonheader
+a
 {
-	font-size: 20px;
-	text-align: center;
+	text-decoration: none;
 }
-@media screen and (max-width: 1050px)
+@media screen and (max-width: 1160px)
 {
 	#intro
 	{
@@ -94,15 +93,8 @@ img
 		font-size: 1em;
 	}
 }
-@media screen and (max-width: 610px)
+@media screen and (max-width: 620px)
 {
-	#cartoonheader
-	{
-		font-size: 1.2em;
-		text-align: justify;
-		margin-right: 10px;
-		margin-left: 10px;
-	}
 	.postheadings
 	{
 		font-size: 4vw;
