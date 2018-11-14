@@ -39,13 +39,14 @@ img
 
 	box-shadow: 0 0 15px 0 #9a9594;
 
-	transition: box-shadow 0.2s, background-color 0.2s;
+	transition: box-shadow 0.2s, background-color 0.2s, transform 0.2s;
 	/*transition-timing-function: linear;*/
 }
 .post:hover
 {
 	box-shadow: 0 0 25px 0 #74706f;
 	background-color: #f8f3f2;
+	transform: scale(1.05, 1.05);
 }
 
 .flex-container
@@ -56,6 +57,7 @@ img
 	justify-content: center;
 
 	padding-top: 5px;
+	margin-bottom: 25px;
 }
 #hello
 {
@@ -82,6 +84,15 @@ a
 		margin-left: 2px; 
 	}
 }
+@media screen and (max-width: 700px)
+{
+	.post:hover
+	{
+		box-shadow: 0 0 15px 0 #9a9594;
+		background-color: #f6efed;
+		transform: scale(1, 1);
+	}
+}
 @media screen and (max-width: 650px)
 {
 	#hello
@@ -95,6 +106,10 @@ a
 }
 @media screen and (max-width: 620px)
 {
+	.flex-container
+	{
+		margin-bottom: 0px;
+	}
 	.postheadings
 	{
 		font-size: 4vw;
