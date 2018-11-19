@@ -71,6 +71,27 @@ img
 	font-size: 20px;
 	text-align: center;
 }
+button
+{
+	background-color: #efefef;
+	border: 2px solid #9a9594;
+	border-radius: 8px;
+	font-size: 1.2em;
+	padding: 10px 40px;
+	text-align: center;
+	text-decoration: none;
+	display: inline block;
+
+	transition-duration: 0.2s;
+}
+button:hover
+{
+	background-color: #dfdfdf;
+}
+.butt
+{
+	text-align: center;
+}
 a
 {
 	text-decoration: none;
