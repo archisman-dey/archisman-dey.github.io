@@ -8,6 +8,8 @@ function dispbutton()
 	var x = window.matchMedia("(max-width: 500px)");
 	if (x.matches)
 	{
+		document.getElementById("cartoon").style.height = 'auto';
+		b.innerHTML = "Fit to Page";
 		b.style.display = "none";
 	}
 	else
