@@ -17,7 +17,6 @@ function dispbutton()
 		b.style.display = "inline-block";
 	}
 }
-
 function respond()
 {
 	var b = document.getElementById('button');
