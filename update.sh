@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+#!/bin/bash
 #Input : commit message
 echo "\nCommiting to git:\n"
 git add --all
