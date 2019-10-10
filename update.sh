@@ -1,7 +1,6 @@
 #!/bin/bash
 #Input : commit message
-echo "\nCommiting to git:\n"
+echo "Commiting to git:"
 git add --all
 git commit -m $1
-echo  #this is just for formatting
 git push -u origin master
