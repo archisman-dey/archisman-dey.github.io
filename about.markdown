@@ -1,18 +1,14 @@
 ---
-layout: default
+layout: about
 title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+# Hi,
+## I'm Archisman Dey,
+an undergraduate student studying Electronics and Electrical Engineering at IIT Guwahati. I have been coding since
+I was 15 and have programming experience with C, C++ and Python and some experience with embedded systems.
+You can check out [my GitHub profile](https://github.com/archisman-dey) to look at some of my projects.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+I have been selected for Google Summer of Code 2021 under BeagleBoard.org and I will be
+working on Improvements to simpPRU. You can read about my proposal on [eLinux](https://elinux.org/BeagleBoard/GSoC/2021_Proposal/simpPRU_Improvements).
