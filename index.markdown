@@ -24,4 +24,4 @@ I will be updating what I did daily, with a summary post about what I did, what 
 - 18th May: Went through the proposal again, completed GSoC formalities
 - 19th May: Setup this GitHub pages site, had weekly meeting with mentors
 - 20th May: Tweaked this site, added About Me section
-- 21st - 24th Mat: Currently going through the tutorials/videos/articles on flex, bison and how to write a simple compiler listed in [simpPRU's GitHub Wiki](https://github.com/VedantParanjape/simpPRU/wiki#resources-that-helped-a-lot)
+- 21st - 24th May: Currently going through the tutorials/videos/articles on flex, bison and how to write a simple compiler listed in [simpPRU's GitHub Wiki](https://github.com/VedantParanjape/simpPRU/wiki#resources-that-helped-a-lot)
