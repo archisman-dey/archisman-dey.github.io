@@ -13,15 +13,15 @@ I will be posting once a week, since my pre work is mainly reading documentation
 I will be updating what I did daily, with a summary post about what I did, what issues I'm facing and how I'm going to solve them at the end of the week. Also, I will write two posts on [the BeagleBoard blog](https://beagleboard.org/blog/) during the two evaluation periods - mid July and mid August.
 
 ### Before getting accepted
-- built gcc-pru from source following [instructions on dinuxbg's GitHub](https://github.com/dinuxbg/gnupru#building-from-sources).
-- built simpPRU from source following [instructions on Vedant's GitHub](https://github.com/VedantParanjape/simpPRU#building-from-source).
-- read some basics about flex and bison
-- read about the third party C libraries used in simpPRU - vec, klib, cJson
-- played around with simpPRU code
+- Built gcc-pru from source following [instructions on dinuxbg's GitHub](https://github.com/dinuxbg/gnupru#building-from-sources).
+- Built simpPRU from source following [instructions on Vedant's GitHub](https://github.com/VedantParanjape/simpPRU#building-from-source).
+- Read some basics about flex and bison
+- Read about the third party C libraries used in simpPRU - vec, klib, cJson
+- Played around with simpPRU code
 
 ### Week 0.1 (17th May - 24th May)
 - 17th May: Got the accepted email!
 - 18th May: Went through the proposal again, completed GSoC formalities
-- 19th May: setup this GitHub pages site, had weekly meeting with mentors
-- 20th May: tweaked this site, added About Me section
+- 19th May: Setup this GitHub pages site, had weekly meeting with mentors
+- 20th May: Tweaked this site, added About Me section
 - 21st - 24th Mat: Currently going through the tutorials/videos/articles on flex, bison and how to write a simple compiler listed in [simpPRU's GitHub Wiki](https://github.com/VedantParanjape/simpPRU/wiki#resources-that-helped-a-lot)
