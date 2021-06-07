@@ -25,3 +25,11 @@ I will be updating what I did daily, with a summary post about what I did, what 
 - 19th May: Setup this GitHub pages site, had weekly meeting with mentors
 - 20th May: Tweaked this site, added About Me section
 - 21st - 24th May: Currently going through the tutorials/videos/articles on flex, bison and how to write a simple compiler listed in [simpPRU's GitHub Wiki](https://github.com/VedantParanjape/simpPRU/wiki#resources-that-helped-a-lot)
+
+### Week 0.2 (24th May - 31st May)
+- went through [writing a simple compiler on my own](https://steemit.com/utopian-io/@drifter1/writing-a-simple-compiler-on-my-own-generating-code-for-assignments-part-1), a tutorial series for writing a compiler for a subset of a C like language
+
+### Week 0.3 (31st May - 7th June)
+- 1st June: received PocketBeagle, along with a micro SD card and a USB card reader
+- 2nd June: installed Debian, got USB internet sharing working following this [gist](https://gist.github.com/pdp7/d2711b5ff1fbb000240bd8337b859412), built simpPRU from source on the PocketBeagle
+- 3rd - 6th June: playing around with PocketBeagle and simpPRU.
