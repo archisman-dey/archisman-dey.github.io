@@ -32,4 +32,9 @@ I will be updating what I did daily, with a summary post about what I did, what 
 ### Week 0.3 (31st May - 7th June)
 - 1st June: received PocketBeagle, along with a micro SD card and a USB card reader
 - 2nd June: installed Debian, got USB internet sharing working following this [gist](https://gist.github.com/pdp7/d2711b5ff1fbb000240bd8337b859412), built simpPRU from source on the PocketBeagle
-- 3rd - 6th June: playing around with PocketBeagle and simpPRU.
+- 3rd - 6th June: playing around with PocketBeagle and simpPRU
+
+### Week 1 (7th June - 14th June)
+- 7th June: Read [Intro to Modern CMake](https://cliutils.gitlab.io/modern-cmake/) and some other articles
+- 8th June: Read about testing in CMake, created basic tests folder, received BeagleBone Blue and BeagleBone AI
+- 9th June: Setup Blue and AI (installed Debian, updated kernel and scripts, configured internet sharing) weekly meeting with mentors on Jitsi, notes for the meeting: [Meeting 1 Notes (pastebin)](https://pastebin.com/6E0NSy5k)
