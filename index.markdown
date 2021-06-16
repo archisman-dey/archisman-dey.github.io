@@ -40,7 +40,7 @@ I will be updating what I did daily, with a summary post about what I did, what 
 - 9th June: Setup Blue and AI (installed Debian, updated kernel and scripts, configured internet sharing) weekly meeting with mentors on Jitsi, notes for the meeting: [Meeting 1 Notes (pastebin)](https://pastebin.com/6E0NSy5k)
 - 10-14th June:
     - worked a bit on the "infrastructure" for adding tests
-    - added JSoN file containing the pinouts for the BeagleBone Blue
+    - added JSON file containing the pinouts for the BeagleBone Blue
     - added support for BeagleBone Blue apart from using header pins
     - read PRU Cookbook
 - 13th June: Introductory Youtube Video: https://www.youtube.com/watch?v=-zZ57sqQPSY
