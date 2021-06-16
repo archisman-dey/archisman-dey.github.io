@@ -38,3 +38,13 @@ I will be updating what I did daily, with a summary post about what I did, what 
 - 7th June: Read [Intro to Modern CMake](https://cliutils.gitlab.io/modern-cmake/) and some other articles
 - 8th June: Read about testing in CMake, created basic tests folder, received BeagleBone Blue and BeagleBone AI
 - 9th June: Setup Blue and AI (installed Debian, updated kernel and scripts, configured internet sharing) weekly meeting with mentors on Jitsi, notes for the meeting: [Meeting 1 Notes (pastebin)](https://pastebin.com/6E0NSy5k)
+- 10-14th June:
+    - worked a bit on the "infrastructure" for adding tests
+    - added JSoN file containing the pinouts for the BeagleBone Blue
+    - added support for BeagleBone Blue apart from using header pins
+    - read PRU Cookbook
+- 13th June: Introductory Youtube Video: https://www.youtube.com/watch?v=-zZ57sqQPSY
+
+### Week 2 (14th June - 21st June)
+- 16th June: Had weekly meeting with mentors on Jitsi, notes for the meeting: [Meeting 2 Notes (pastebin)](https://pastebin.com/Anf9U3i9)
+- will complete adding tests by this week
