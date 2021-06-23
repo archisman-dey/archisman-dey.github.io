@@ -47,4 +47,18 @@ I will be updating what I did daily, with a summary post about what I did, what 
 
 ### Week 2 (14th June - 21st June)
 - 16th June: Had weekly meeting with mentors on Jitsi, notes for the meeting: [Meeting 2 Notes (pastebin)](https://pastebin.com/Anf9U3i9)
-- will complete adding tests by this week
+- added a -c flag to stop simppru after C code generation
+- added a -t flag to use stub functions instead of the PRU IO functions
+- added print() and println() functions that can print strings and int/bool identifiers:
+```
+>>println("Hello World");
+>>int a := 2;
+>>print(a);
+Hello World
+2
+```
+- added some tests that check code generation by running the generated C code with gcc and comparing with expected outputs
+- added a test.py script to run these tests automatically
+
+### Week 3 (21st June - 31st June)
+- 
