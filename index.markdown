@@ -60,5 +60,17 @@ Hello World
 - added some tests that check code generation by running the generated C code with gcc and comparing with expected outputs
 - added a test.py script to run these tests automatically
 
-### Week 3 (21st June - 31st June)
-- 
+### Week 3 (21st June - 28th June)
+- added support for modulo operators in arithmetic expressions
+- added support for hexadecimal and octal integers
+- made bitwise operators (and, or, not) work in arithmetic expressions instead of boolean expressions
+- added left and right bitshift operators for arithmetic expressions
+- modified the lexer so that control statements (break, continue) can only be called inside loops
+- 26th June: sent a PR for print, tests and related changes: [Pull requests](https://github.com/VedantParanjape/simpPRU/pull/11)
+
+### Week 4 (28th June - 5th July)
+- 30th June: had weekly meeting with mentors over slack:
+    - decided to update documentation for things done until now before adding other features
+    - removed all unnecessary whitespace changes from the PR
+    - was asked to push smaller PRs, will break into two seperate PRs for print and adding tests
+    - will have one on one meeting with Vedant Paranjape soon
