@@ -5,13 +5,6 @@
 layout: default
 ---
 
-### Posting Schedule
-
-#### Community Bonding Period (17th May - 7th June)
-I will be posting once a week, since my pre work is mainly reading documentation and tutorials. Expect posts on 24th May, 31st May and 7th June.
-#### Coding Period (7th June - 23rd August)
-I will be updating what I did daily, with a summary post about what I did, what issues I'm facing and how I'm going to solve them at the end of the week. Also, I will write two posts on [the BeagleBoard blog](https://beagleboard.org/blog/) during the two evaluation periods - mid July and mid August.
-
 ### Before getting accepted
 - Built gcc-pru from source following [instructions on dinuxbg's GitHub](https://github.com/dinuxbg/gnupru#building-from-sources).
 - Built simpPRU from source following [instructions on Vedant's GitHub](https://github.com/VedantParanjape/simpPRU#building-from-source).
