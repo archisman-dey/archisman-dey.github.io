@@ -419,10 +419,6 @@ body {
         grid-column: span 1;
     }
     
-    .polaroid {
-        padding: 0.75rem 0.75rem 2rem;
-    }
-    
     .photo-info {
         font-size: 0.8rem;
     }
