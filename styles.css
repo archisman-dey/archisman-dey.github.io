@@ -152,6 +152,13 @@ body {
     margin: 0 auto;
 }
 
+/* Photography section uses full width */
+#photography {
+    max-width: none;
+    margin: 0;
+    padding: 3rem;
+}
+
 .content-section.active {
     display: block;
 }
@@ -273,7 +280,7 @@ body {
 
 .polaroid {
     background: white;
-    padding: 1rem 1rem 2.5rem;
+    padding: 1.5rem 1.5rem 1.5rem;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 2px;
     transform: rotate(-1deg);
@@ -293,6 +300,9 @@ body {
     border-radius: 1px;
     opacity: 0;
     transition: opacity 0.5s ease;
+    max-width: 2000px;
+    max-height: 2000px;
+    object-fit: contain;
 }
 
 .polaroid img.loaded {
@@ -333,19 +343,73 @@ body {
     font-size: 0.9rem;
 }
 
-/* Desktop layout - 3 portrait or 2 landscape */
-@media (min-width: 769px) {
+/* Desktop layout - responsive grid */
+@media (min-width: 769px) and (max-width: 1449px) {
     .photo-gallery {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+    
+    .photo-item.landscape {
+        grid-column: span 1;
+    }
+    
+    /* Larger photos on desktop */
+    .polaroid {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    /* Landscape photos can be larger */
+    .photo-item.landscape .polaroid {
+        max-width: 800px;
+    }
+}
+
+/* Large desktop screens - 2 photos per row */
+@media (min-width: 1450px) {
+    .photo-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+        gap: 2rem;
     }
     
     .photo-item.landscape {
         grid-column: span 2;
     }
+    
+    .polaroid {
+        max-width: 450px;
+    }
+    
+    /* Landscape photos can be larger on large screens */
+    .photo-item.landscape .polaroid {
+        max-width: 900px;
+    }
 }
 
-/* Mobile layout - 1 photo per row */
-@media (max-width: 768px) {
+/* Extra large screens - 3+ photos per row */
+@media (min-width: 1800px) {
+    .photo-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .photo-item.landscape {
+        grid-column: span 2;
+    }
+    
+    .polaroid {
+        max-width: 400px;
+    }
+    
+    /* Landscape photos can be larger on extra large screens */
+    .photo-item.landscape .polaroid {
+        max-width: 1000px;
+    }
+}
+
+/* Medium screens - single column layout */
+@media (max-width: 1000px) {
     .photo-gallery {
         grid-template-columns: 1fr;
         gap: 1.5rem;

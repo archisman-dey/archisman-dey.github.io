@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Photography gallery functionality
     const photoGallery = document.getElementById('photoGallery');
     
-    // Photo data - you can add more photos here
+    // Photo data - all photos from the photos/ directory
     const photos = [
         {
             src: 'photos/DSCF2917_edited.jpg',
@@ -145,12 +145,215 @@ document.addEventListener('DOMContentLoaded', function() {
             alt: 'Mountain landscape'
         },
         {
-            src: 'photos/DSCF4803_final_compressed.jpeg',
+            src: 'photos/DSCF4803_brighter.jpg',
             location: 'City Streets',
             date: 'January 2024',
             alt: 'Urban photography'
+        },
+        {
+            src: 'photos/DSCF9299.JPG',
+            location: 'Nature Trail',
+            date: 'February 2024',
+            alt: 'Natural landscape'
+        },
+        {
+            src: 'photos/DSCF9781-02.jpeg',
+            location: 'Coastal View',
+            date: 'March 2024',
+            alt: 'Ocean scenery'
+        },
+        {
+            src: 'photos/DSCF9589-01~2.jpeg',
+            location: 'Forest Path',
+            date: 'March 2024',
+            alt: 'Woodland scene'
+        },
+        {
+            src: 'photos/DSCF8829.JPG',
+            location: 'Mountain Peak',
+            date: 'April 2024',
+            alt: 'Mountain vista'
+        },
+        {
+            src: 'photos/image-01 2.jpeg',
+            location: 'Urban Architecture',
+            date: 'April 2024',
+            alt: 'City buildings'
+        },
+        {
+            src: 'photos/DSCF8281-01.jpeg',
+            location: 'Riverside',
+            date: 'May 2024',
+            alt: 'River landscape'
+        },
+        {
+            src: 'photos/DSCF9241.JPG',
+            location: 'Sunset Point',
+            date: 'May 2024',
+            alt: 'Sunset view'
+        },
+        {
+            src: 'photos/DSCF8295.JPG',
+            location: 'Valley View',
+            date: 'June 2024',
+            alt: 'Valley scenery'
+        },
+        {
+            src: 'photos/DSCF9352.JPG',
+            location: 'Lakeside',
+            date: 'June 2024',
+            alt: 'Lake view'
+        },
+        {
+            src: 'photos/DSCF8364.JPG',
+            location: 'Meadow',
+            date: 'July 2024',
+            alt: 'Open field'
+        },
+        {
+            src: 'photos/DSCF8358.JPG',
+            location: 'Hilltop',
+            date: 'July 2024',
+            alt: 'Hill landscape'
+        },
+        {
+            src: 'photos/DSCF7375.JPG',
+            location: 'Desert View',
+            date: 'August 2024',
+            alt: 'Desert scene'
+        },
+        {
+            src: 'photos/DSCF8064.JPG',
+            location: 'Canyon',
+            date: 'August 2024',
+            alt: 'Canyon view'
+        },
+        {
+            src: 'photos/DSCF8067-01-01.jpeg',
+            location: 'Mountain Lake',
+            date: 'September 2024',
+            alt: 'Alpine lake'
+        },
+        {
+            src: 'photos/DSCF7591.jpg',
+            location: 'Forest Edge',
+            date: 'September 2024',
+            alt: 'Forest boundary'
+        },
+        {
+            src: 'photos/DSCF2714~2.JPG',
+            location: 'Coastal Cliffs',
+            date: 'October 2024',
+            alt: 'Cliff view'
+        },
+        {
+            src: 'photos/DSCF7267-01.jpeg',
+            location: 'Mountain Stream',
+            date: 'October 2024',
+            alt: 'Stream in mountains'
+        },
+        {
+            src: 'photos/DSCF4488~2.JPG',
+            location: 'Valley Floor',
+            date: 'November 2024',
+            alt: 'Valley landscape'
+        },
+        {
+            src: 'photos/DSCF2856~2.JPG',
+            location: 'Alpine Meadow',
+            date: 'November 2024',
+            alt: 'High altitude meadow'
+        },
+        {
+            src: 'photos/DSCF4560~2.JPG',
+            location: 'Riverside Path',
+            date: 'December 2024',
+            alt: 'River trail'
+        },
+        {
+            src: 'photos/DSCF7197.JPG',
+            location: 'Mountain Pass',
+            date: 'December 2024',
+            alt: 'Mountain pass view'
+        },
+        {
+            src: 'photos/DSCF3027.JPG',
+            location: 'Lakeside Trail',
+            date: 'January 2025',
+            alt: 'Lake trail'
+        },
+        {
+            src: 'photos/DSCF0946-01.jpeg',
+            location: 'Mountain Vista',
+            date: 'January 2025',
+            alt: 'Mountain panorama'
+        },
+        {
+            src: 'photos/DSCF2391-EFFECTS.jpg',
+            location: 'Sunset Ridge',
+            date: 'February 2025',
+            alt: 'Sunset on ridge'
+        },
+        {
+            src: 'photos/DSCF0848-01.jpeg',
+            location: 'Alpine Lake',
+            date: 'February 2025',
+            alt: 'High altitude lake'
+        },
+        {
+            src: 'photos/DSCF0945-01.jpeg',
+            location: 'Mountain Peak',
+            date: 'March 2025',
+            alt: 'Peak view'
+        },
+        {
+            src: 'photos/DSCF1006-01~2.jpeg',
+            location: 'Valley Stream',
+            date: 'March 2025',
+            alt: 'Stream in valley'
+        },
+        {
+            src: 'photos/DSCF2494.JPG',
+            location: 'Forest Clearing',
+            date: 'April 2025',
+            alt: 'Forest opening'
+        },
+        {
+            src: 'photos/DSCF0751.JPG',
+            location: 'Mountain Ridge',
+            date: 'April 2025',
+            alt: 'Ridge view'
+        },
+        {
+            src: 'photos/DSC_0016.JPG',
+            location: 'Coastal Bay',
+            date: 'May 2025',
+            alt: 'Bay view'
+        },
+        {
+            src: 'photos/1000323333-02.jpeg',
+            location: 'Mountain Lake',
+            date: 'May 2025',
+            alt: 'Mountain lake'
+        },
+        {
+            src: 'photos/DSCF0739.JPG',
+            location: 'Alpine Valley',
+            date: 'June 2025',
+            alt: 'Alpine valley'
+        },
+        {
+            src: 'photos/DSCF0644.JPG',
+            location: 'Mountain Stream',
+            date: 'June 2025',
+            alt: 'Mountain stream'
+        },
+        {
+            src: 'photos/20241214_210314~2.jpg',
+            location: 'Sunset View',
+            date: 'December 2024',
+            alt: 'Sunset landscape'
         }
-        // Add more photos here as you add them to the photos/ directory
     ];
     
     // Create photo element
