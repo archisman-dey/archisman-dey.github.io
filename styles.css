@@ -26,7 +26,10 @@ body {
     display: flex;
     flex-direction: column;
     transition: transform 0.3s ease;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
     z-index: 1000;
 }
 
@@ -36,6 +39,13 @@ body {
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+
+.sidebar-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
 }
 
 /* Mobile toggle button */
@@ -60,14 +70,6 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.sidebar-title {
-    font-family: 'Fira Code', 'Consolas', 'Monaco', 'Courier New', monospace;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #333;
-    margin: 0;
-}
-
 /* Navigation */
 .sidebar-nav {
     flex: 1;
@@ -89,7 +91,6 @@ body {
     padding: 1rem 1.5rem;
     text-decoration: none;
     color: #333;
-    font-family: 'Fira Code', 'Consolas', 'Monaco', 'Courier New', monospace;
     font-weight: 500;
     transition: all 0.2s ease;
     border-left: 3px solid transparent;
@@ -123,7 +124,6 @@ body {
     gap: 0.5rem;
     text-decoration: none;
     color: #333;
-    font-family: 'Fira Code', 'Consolas', 'Monaco', 'Courier New', monospace;
     font-weight: 500;
     padding: 0.75rem 1rem;
     border-radius: 6px;
@@ -143,6 +143,7 @@ body {
     background-color: rgb(250, 249, 245);
     overflow-y: auto;
     min-height: 100vh;
+    margin-left: 280px;
 }
 
 .content-section {
@@ -152,15 +153,15 @@ body {
     margin: 0 auto;
 }
 
+.content-section.active {
+    display: block;
+}
+
 /* Photography section uses full width */
 #photography {
     max-width: none;
     margin: 0;
     padding: 3rem;
-}
-
-.content-section.active {
-    display: block;
 }
 
 .section-content {
@@ -179,7 +180,6 @@ body {
 }
 
 .section-title {
-    font-family: 'Fira Code', 'Consolas', 'Monaco', 'Courier New', monospace;
     font-size: 2.5rem;
     font-weight: 700;
     color: #333;
@@ -188,7 +188,6 @@ body {
 }
 
 .section-subtitle {
-    font-family: 'Fira Code', 'Consolas', 'Monaco', 'Courier New', monospace;
     font-size: 1.25rem;
     font-weight: 500;
     color: #666;
@@ -214,7 +213,6 @@ body {
 }
 
 .social-title {
-    font-family: 'Fira Code', 'Consolas', 'Monaco', 'Courier New', monospace;
     font-size: 1.5rem;
     font-weight: 600;
     color: #333;
@@ -278,6 +276,10 @@ body {
     transform: translateY(0);
 }
 
+.photo-item.error {
+    opacity: 0.5;
+}
+
 .polaroid {
     background: white;
     padding: 1.5rem 1.5rem 1.5rem;
@@ -312,7 +314,6 @@ body {
 .photo-info {
     margin-top: 1rem;
     text-align: center;
-    font-family: 'Fira Code', 'Consolas', 'Monaco', 'Courier New', monospace;
     font-size: 0.9rem;
     color: #666;
     font-weight: 500;
@@ -339,92 +340,10 @@ body {
     justify-content: center;
     min-height: 200px;
     color: #999;
-    font-family: 'Fira Code', 'Consolas', 'Monaco', 'Courier New', monospace;
     font-size: 0.9rem;
 }
 
-/* Desktop layout - responsive grid */
-@media (min-width: 769px) and (max-width: 1449px) {
-    .photo-gallery {
-        grid-template-columns: 1fr;
-        gap: 2.5rem;
-    }
-    
-    .photo-item.landscape {
-        grid-column: span 1;
-    }
-    
-    /* Larger photos on desktop */
-    .polaroid {
-        max-width: 500px;
-        margin: 0 auto;
-    }
-    
-    /* Landscape photos can be larger */
-    .photo-item.landscape .polaroid {
-        max-width: 800px;
-    }
-}
-
-/* Large desktop screens - 2 photos per row */
-@media (min-width: 1450px) {
-    .photo-gallery {
-        grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
-        gap: 2rem;
-    }
-    
-    .photo-item.landscape {
-        grid-column: span 2;
-    }
-    
-    .polaroid {
-        max-width: 450px;
-    }
-    
-    /* Landscape photos can be larger on large screens */
-    .photo-item.landscape .polaroid {
-        max-width: 900px;
-    }
-}
-
-/* Extra large screens - 3+ photos per row */
-@media (min-width: 1800px) {
-    .photo-gallery {
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-        gap: 1.5rem;
-    }
-    
-    .photo-item.landscape {
-        grid-column: span 2;
-    }
-    
-    .polaroid {
-        max-width: 400px;
-    }
-    
-    /* Landscape photos can be larger on extra large screens */
-    .photo-item.landscape .polaroid {
-        max-width: 1000px;
-    }
-}
-
-/* Medium screens - single column layout */
-@media (max-width: 1000px) {
-    .photo-gallery {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-    
-    .photo-item.landscape {
-        grid-column: span 1;
-    }
-    
-    .photo-info {
-        font-size: 0.8rem;
-    }
-}
-
-/* Responsive design */
+/* Responsive Design */
 @media (max-width: 768px) {
     .mobile-toggle {
         display: flex;
@@ -490,28 +409,78 @@ body {
     }
 }
 
-/* Overlay for mobile */
-.sidebar-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 999;
-    display: none;
+/* Photo Gallery Responsive Grid */
+@media (min-width: 769px) and (max-width: 1449px) {
+    .photo-gallery {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+    
+    .photo-item.landscape {
+        grid-column: span 1;
+    }
+    
+    .polaroid {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .photo-item.landscape .polaroid {
+        max-width: 800px;
+    }
 }
 
-.sidebar-overlay.active {
-    display: block;
+@media (min-width: 1450px) {
+    .photo-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+        gap: 2rem;
+    }
+    
+    .photo-item.landscape {
+        grid-column: span 2;
+    }
+    
+    .polaroid {
+        max-width: 450px;
+    }
+    
+    .photo-item.landscape .polaroid {
+        max-width: 900px;
+    }
 }
 
-/* Ensure mobile toggle is always visible */
-.mobile-toggle {
-    position: fixed;
-    top: 1rem;
-    left: 1rem;
-    z-index: 1001;
+@media (min-width: 1800px) {
+    .photo-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .photo-item.landscape {
+        grid-column: span 2;
+    }
+    
+    .polaroid {
+        max-width: 400px;
+    }
+    
+    .photo-item.landscape .polaroid {
+        max-width: 1000px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .photo-gallery {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .photo-item.landscape {
+        grid-column: span 1;
+    }
+    
+    .photo-info {
+        font-size: 0.8rem;
+    }
 }
 
 /* Smooth transitions */
