@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Archisman Dey - Software Developer & Photographer</title>
+    <title>Archisman Dey</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -83,24 +83,24 @@
             <section id="introduction" class="content-section active">
                 <div class="section-content">
                     <h1 class="section-title">Hello, I'm Archisman Dey</h1>
-                    <p class="section-subtitle">Software Developer & Amateur Photographer</p>
+                    <p class="section-subtitle">Software Engineer, Hobbyist Photographer</p>
                     
                     <div class="intro-content">
                         <p class="intro-text">
-                            Welcome to my personal website! I'm a passionate software developer with a keen eye for photography. 
-                            I love creating elegant solutions to complex problems and capturing beautiful moments through my lens.
+                            Welcome to my personal website! I'm a backend software engineer (distributed systems, C++ / Go, a bit of cloud infra)
+                            working for ThoughtSpot in Bangalore. I graduated with a bachelor’s degree from IIT Guwahati in 2023, 
+                            majoring in Electronics and minoring in Computer Science.
                         </p>
                         
                         <p class="intro-text">
-                            When I'm not coding, you'll find me exploring new places with my camera, experimenting with different 
-                            photography techniques, or contributing to open-source projects.
+                            I love travelling, photography (check out my photography section), working out, drinking coffee, and catching up on what's new in tech.
                         </p>
                     </div>
                     
                     <div class="social-links">
                         <h3 class="social-title">Connect with me</h3>
                         <div class="social-icons">
-                            <a href="https://linkedin.com/in/archisman-dey" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <a href="https://linkedin.com/in/archismandey" target="_blank" rel="noopener noreferrer" class="social-link">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                                     <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                                 </svg>
@@ -121,10 +121,100 @@
             <section id="experience" class="content-section">
                 <div class="section-content">
                     <h1 class="section-title">Experience</h1>
-                    <p class="section-subtitle">My professional journey</p>
-                    
-                    <div class="experience-content">
-                        <p>Experience content will be added here. This section will showcase your work history, projects, and achievements.</p>
+                    <br>
+                    <div class="experience-section">
+                        <h2 class="experience-category">Industry</h2>
+                        
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <div class="experience-company">ThoughtSpot</div>
+                                <div class="experience-location">Bangalore, India</div>
+                            </div>
+                            <div class="experience-title">Member of Technical Staff 3</div>
+                            <div class="experience-duration">February 2025 - Present</div>
+                            <div class="experience-description">
+                                <p>Contributing to the metadata and data indexing system powering the Search Data feature.</p>
+                                <ul>
+                                    <li>Redesigned and reimplemented key parts of the data indexing stack, 
+                                        introducing major changes across multiple microservices. 
+                                        This improved Elasticsearch utilization by 4x, significantly reducing infrastructure costs, 
+                                        enabling much higher scale, and allowing full production rollout without cost overruns.
+                                    </li>
+                                    <li>Currently working on another not-yet-announced feature and 
+                                        further scale improvements to the metadata system.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <div class="experience-company">ThoughtSpot</div>
+                                <div class="experience-location">Bangalore, India</div>
+                            </div>
+                            <div class="experience-title">Member of Technical Staff 2</div>
+                            <div class="experience-duration">August 2023 - February 2025</div>
+                            <div class="experience-description">
+                                <p>Contributed to the metadata and data indexing system powering the Search Data feature.</p>
+                                <ul>
+                                    <li>Optimized the metadata indexing process to be parallel and incremental,
+                                        cutting worst-case time from 2 minutes to 30 seconds and reducing average time to under 1 second.</li>
+                                    <li>Designed and implemented infrastructure to deploy and autoscale per-region Elasticsearch clusters used for data indexing, 
+                                        removing the need for manual management of the clusters.</li>
+                                    <li>Implemented multiple performance enhancements to the data indexing system, including dynamic, 
+                                        usage-based connection pooling instead of fixed-size pools.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience-section">
+                        <h2 class="experience-category">Research</h2>
+                        
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <div class="experience-company">McGill University</div>
+                                <div class="experience-location">Montreal, Canada</div>
+                            </div>
+                            <div class="experience-title">MITACS Research Intern</div>
+                            <div class="experience-duration">May 2022 - August 2022</div>
+                            <div class="experience-description">
+                                <p>Interdisciplinary research project combining Electronics (FPGA) and Computer Science (Compilers). </p>
+                                <ul>
+                                    <li>Implemented a parameterized Fast Fourier Transform algorithm for FPGAs using a 
+                                        new high level synthesis framework using only functional primitives in Scala like Map, Reduce, Fold.</li>
+                                    <li>Optimized and synthesized the design from the generated VHDL code with different number of 
+                                        inputs having different bit-widths and achieved 90%+ throughput on Intel Arria 10 FPGA.</li>
+                                    <li>Used the general FFT, element-wise multiplication and inverse-FFT to implement a fast 2D convolution 
+                                        pipeline for use in Convolutional Neural Networks on FPGA.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience-section">
+                        <h2 class="experience-category">Open Source</h2>
+                        
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <div class="experience-company">BeagleBoard.org Foundation</div>
+                                <div class="experience-location">Remote</div>
+                            </div>
+                            <div class="experience-title">Google Summer of Code Contributor</div>
+                            <div class="experience-duration">June 2021 - August 2021</div>
+                            <div class="experience-description">
+                                <p>Worked on improvements to the simpPRU language used for real time compute.</p>
+                                <ul>
+                                    <li>Fixed bugs with the language grammar and wrote the lexer, parser, 
+                                        and code generator for new language features such as a char/uint8 data type, 
+                                        new for-loop, and static arrays to the transpiler written in C using flex and bison.</li>
+                                    <li>Created an automated test suite for simpPRU, a statically typed, 
+                                        compiled language that transpiles down to PRU C, 
+                                        running on Texas Instrument's AM335x PRU (Programmable Real Time Unit).</li>
+                                    <li>Improved communication capabilities between the host Linux CPU and the PRU 
+                                        in simpPRU by adding the ability to send arrays to the host CPU using Linux kernel's remoteproc framework and rpmsg.</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -133,10 +223,23 @@
             <section id="education" class="content-section">
                 <div class="section-content">
                     <h1 class="section-title">Education</h1>
-                    <p class="section-subtitle">Academic background</p>
-                    
-                    <div class="education-content">
-                        <p>Education content will be added here. This section will include your degrees, certifications, and academic achievements.</p>
+                    <br>
+
+                    <div class="education-item">
+                        <div class="education-header">
+                            <div class="education-degree">Bachelor of Technology in Electronics and Electrical Engineering</div>
+                            <div class="education-school">Indian Institute of Technology, Guwahati</div>
+                        </div>
+                        <div class="education-duration">2019 - 2023</div>
+                        <div class="education-details">
+                            <p>with a minor in Computer Science and Engineering</p>
+                            <ul>
+                                <li>GPA: 8.06 / 10.0 (Major)</li>
+                                <li>GPA: 8 / 10 (Minor)</li>
+                                <li>Relevant Coursework: Theoretical Foundations of Computer Science, Data Structures and Algorithms, Digital Logic and Computer Architecture, 
+                                    Computer Systems, Software Engineering, C-Based VLSI Design</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -145,10 +248,81 @@
             <section id="skills" class="content-section">
                 <div class="section-content">
                     <h1 class="section-title">Skills</h1>
-                    <p class="section-subtitle">Technical expertise</p>
                     
-                    <div class="skills-content">
-                        <p>Skills content will be added here. This section will showcase your technical skills, programming languages, and tools.</p>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3 class="skill-category-title">Programming Languages</h3>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <span class="skill-name">C++</span>
+                                    <div class="skill-level">
+                                        <div class="skill-bar" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Python</span>
+                                    <div class="skill-level">
+                                        <div class="skill-bar" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Golang</span>
+                                    <div class="skill-level">
+                                        <div class="skill-bar" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Java</span>
+                                    <div class="skill-level">
+                                        <div class="skill-bar" style="width: 60%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3 class="skill-category-title">Tools & Platforms</h3>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <span class="skill-name">Kubernetes</span>
+                                    <div class="skill-level">
+                                        <div class="skill-bar" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Terraform</span>
+                                    <div class="skill-level">
+                                        <div class="skill-bar" style="width: 70%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Linux</span>
+                                    <div class="skill-level">
+                                        <div class="skill-bar" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3 class="skill-category-title">Technologies</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Distributed Systems</span>
+                                <span class="skill-tag">Backend Engineering</span>
+                                <span class="skill-tag">Cloud Computing</span>
+                                <span class="skill-tag">Compilers</span>
+                            </div>
+                        </div>
+                        
+
+                        <div class="skill-category">
+                            <h3 class="skill-category-title">Soft Skills</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Problem Solving</span>
+                                <span class="skill-tag">Team Collaboration</span>
+                                <span class="skill-tag">Technical Writing</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -157,7 +331,7 @@
             <section id="photography" class="content-section">
                 <div class="section-content">
                     <h1 class="section-title">Photography</h1>
-                    <p class="section-subtitle">Capturing moments</p>
+                    <p class="section-subtitle">Gallery</p>
                     
                     <div class="photography-content">
                         <div class="photo-gallery" id="photoGallery">
